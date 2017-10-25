@@ -1,0 +1,310 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.375em;
+  color: rgb(150, 151, 155);
+}
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(72, 72, 74);
+  font-weight: 300;
+}
+
+p{
+  font-size: 1.75em;
+  padding-bottom: 23px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 90px;
+  padding: 20px 50px;
+  font-size: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 5px 20px rgba(0,0,0,0.10);
+}
+
+.brand-logo {
+  height: 50px;
+  margin: -15px 20px 0 0;
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+#name {
+  margin-top: 4px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+nav a:hover,
+nav a:active {
+  color: rgb(133, 203, 51);
+}
+
+.dropdown-menu a {
+  font-size: 17px;
+  color: rgb(72, 72, 74) !important;
+}
+
+.drop-spacer {
+  margin-left: 10px;
+}
+
+/* BODY */
+
+/* Ensures div won't be hidden behind header when using anchor tag links */
+.anchor {
+  padding-top: 89px;
+  margin-top: -89px;
+}
+
+/* SECTIONS */
+
+/* Makes a div full screen */
+.full-section {
+  min-height: 110vh;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+.content {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+/* MAIN SECTION*/
+main {
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 90px;
+  padding: 0 60px;
+  min-height: 76vh;
+}
+
+#top-anchor {
+  height: 1px;
+  visibility: hidden;
+}
+
+#home-top {
+  padding: 0 75;
+}
+
+#home-top header {
+  float: left;
+  margin-top: 30%;
+}
+
+#home-top h1{
+  font-size: 3em;
+}
+
+#home-top img {
+  height: 76vh;
+  float: right;
+  overflow: hidden;
+}
+
+#social {
+  background: rgb(133, 203, 51);
+  width: 100%;
+  height: 15vh;
+  padding-top: 35px;
+  display: inline-block;
+  text-align: center;
+}
+
+.fa-github-square,
+.fa-linkedin,
+.fa-behance-square,
+.fa-twitter-square {
+  color: rgb(72, 72, 74);
+  margin: 0 40px;
+}
+
+/* SKILLS SECTION */
+
+#bioSection header {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+#skillsSection,
+#workSection {
+  margin-bottom: 70px;
+}
+
+#skillsSection header,
+#workSection header {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+/* TABLE */
+
+table {
+  width: 70%;
+}
+
+th {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.75em;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0 5px;
+}
+
+td {
+  font-size: 1.75em;
+}
+
+.table-col {
+  text-align: left;
+  width: 16.6%;
+  padding-right: 17.5px;
+}
+
+.stars-col {
+  text-align: left;
+  width: 16.6%;
+  padding-left: 17.5px;
+}
+
+
+/* Button in bottom right hand corner to retutn to top */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 99;
+    border: 3px solid rgb(133, 203, 51);
+    outline: none;
+    background-color: white;
+    color: rgb(133, 203, 51);
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+/* SECTIONS */
+
+/* Makes a div full screen */
+.full-section {
+  min-height: 110vh;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+/* COLORS */
+
+.green {
+  color: rgb(133, 203, 51);
+  text-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+}
+
+.green-bg {
+  background: rgb(133, 203, 51);
+}
+
+.white {
+  color: #ffffff;
+  text-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+}
+
+
+/* CARDS */
+.card {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: 400px;
+  margin: 0 5% 55px 5%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.07);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.07);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.07);
+    transition: all 200ms ease-in;
+    transform: scale(1.07);
+}
+
+#workSection .card header,
+#workSection .card header h4 {
+  padding: 5px 0 0 0;
+  margin: 0;
+  text-decoration: underline;
+}
+
+#workSection .card p {
+  font-size: 0.90em;
+  padding: 0 20px;
+}
+
+.card .card-image {
+  height: 66.6%;
+  border-bottom: 1px solid grey;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  height: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+.card .card-content {
+  height: 33.4%;
+}
