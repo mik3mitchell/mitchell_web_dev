@@ -103,7 +103,8 @@ main {
   background-position: center;
   margin-top: 90px;
   padding: 0 60px;
-  min-height: 76vh;
+  height: 100%;
+  min-height: 100%;
 }
 
 #top-anchor {
@@ -115,7 +116,8 @@ main {
   padding: 0 75;
 }
 
-#home-top header {
+#home-top header,
+#home-top .typewriter {
   float: left;
   margin-top: 30%;
 }
@@ -128,6 +130,10 @@ main {
   height: 76vh;
   float: right;
   overflow: hidden;
+}
+
+.mobile {
+  display:none !important;
 }
 
 #social {

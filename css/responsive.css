@@ -1,0 +1,238 @@
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 991px) {
+      .mobile {
+        display: block !important;
+      }
+
+      .full-screen {
+        display: none;
+      }
+
+      /* NAVBAR */
+
+      .navbar {
+        height: 70px;
+        padding: 10px 25px;
+        font-size: 30px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 5px 20px rgba(0,0,0,0.10);
+      }
+
+      .navbar a{
+        font-size: 25px;
+      }
+
+      .navbar li a {
+        font-size: 20px;
+      }
+
+      .navbar-default .navbar-nav>li>a {
+        padding: 15px 10px;
+      }
+
+      .brand-logo {
+        height: 35px;
+        margin: -10px 5px 0 0;
+      }
+
+      .navbar-brand {
+        font-size: 30px;
+      }
+
+      #name {
+        margin-top: 2px;
+      }
+
+      /* BODY */
+
+      /* BODY */
+
+      /* Ensures div won't be hidden behind header when using anchor tag links */
+      .anchor {
+        padding-top: 70px;
+        margin-top: -70px;
+      }
+
+
+      /* MAIN SECTION*/
+      main {
+        background-size: cover;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin-top: 90px;
+        padding: none;
+        height: 76vh;
+        min-height: 76vh;
+      }
+
+      #home-top {
+        padding: 0 75;
+      }
+
+      #home-top header,
+      #home-top .typewriter {
+        float: none;
+        text-align: center;
+      }
+
+      #home-top header {
+        margin-top: 11%;
+      }
+
+      #home-top h1{
+        font-size: 2.5em;
+        text-align: center;
+      }
+
+      header #type {
+        height: 100px;
+        margin-bottom: 15px;
+      }
+
+      #home-top img {
+        height: 27vh;
+        float: none;
+        margin: 0 35%;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid rgb(133, 203, 51);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 5px 20px rgba(0,0,0,0.10);
+      }
+
+      #social {
+        background: rgb(133, 203, 51);
+        width: 100%;
+        height: 15vh;
+        padding-top: 35px;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .fa-github-square,
+      .fa-linkedin,
+      .fa-behance-square,
+      .fa-twitter-square {
+        color: rgb(72, 72, 74);
+        margin: 0 30px;
+      }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      /* NAVBAR */
+
+      .navbar {
+        height: 55px;
+        padding: 0px 15px;
+        font-size: 30px;
+      }
+
+      .brand-logo {
+        height: 30px;
+        margin: -5px -15px 0 0;
+      }
+
+      .navbar-brand {
+        font-size: 20px;
+      }
+
+      #name {
+        margin-top: 4px;
+      }
+
+      .navbar-default .navbar-nav>li>a:hover,
+      .navbar-default .navbar-nav>li>a:active,
+      nav a:hover,
+      nav a:active {
+        color: rgb(133, 203, 51);
+      }
+
+      .navbar-nav>li>a {
+        margin: 0 0 15px 15px;
+      }
+
+      .dropdown-menu {
+        padding: 0 0 10px 30px;
+      }
+
+      #bs-example-navbar-collapse-1 {
+        background: #ffffff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 5px 20px rgba(0,0,0,0.10);
+      }
+
+      /* BODY */
+
+      /* Ensures div won't be hidden behind header when using anchor tag links */
+      .anchor {
+        padding-top: 55px;
+        margin-top: -55px;
+      }
+
+      /* SECTIONS */
+      /* MAIN SECTION*/
+      main {
+        background-size: cover;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin-top: 55px;
+        min-height: 76vh;
+      }
+
+      #home-top header {
+        margin-top: 10%;
+      }
+
+      #home-top h1{
+        font-size: 2.2em;
+      }
+
+      #home-top img {
+        height: 50vh;
+        float: right;
+        overflow: hidden;
+      }
+
+      #social {
+        background: rgb(133, 203, 51);
+        width: 100%;
+        height: 15vh;
+        padding-top: 35px;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .fa-github-square,
+      .fa-linkedin,
+      .fa-behance-square,
+      .fa-twitter-square {
+        color: rgb(72, 72, 74);
+        margin: 0 40px;
+      }
+
+      }
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }
