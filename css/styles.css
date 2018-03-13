@@ -27,6 +27,7 @@ p{
   padding: 20px 50px;
   font-size: 30px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 5px 20px rgba(0,0,0,0.10);
+  margin-right: 0px;
 }
 
 .brand-logo {
@@ -116,10 +117,14 @@ main {
   padding: 0 75;
 }
 
+#home-top section {
+  height: 78vh;
+}
+
 #home-top header,
 #home-top .typewriter {
   float: left;
-  margin-top: 30%;
+  margin-top: 28vh;
 }
 
 #home-top h1{
@@ -127,7 +132,9 @@ main {
 }
 
 #home-top img {
-  height: 76vh;
+  min-height: 570px;
+  height: 78vh;
+  padding: 20px 0;
   float: right;
   overflow: hidden;
 }
@@ -139,18 +146,36 @@ main {
 #social {
   background: rgb(133, 203, 51);
   width: 100%;
-  height: 15vh;
-  padding-top: 35px;
+  height: 125px;
+  padding-top: 30px;
   display: inline-block;
   text-align: center;
 }
 
 .fa-github-square,
 .fa-linkedin,
+.fa-dribbble-square,
 .fa-behance-square,
 .fa-twitter-square {
   color: rgb(72, 72, 74);
   margin: 0 40px;
+}
+
+.fa-github-square:hover,
+.fa-linkedin:hover,
+.fa-dribbble-square:hover,
+.fa-behance-square:hover,
+.fa-twitter-square:hover {
+  color: #353535;
+  z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.07);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.07);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.07);
+    transition: all 300ms ease-in;
+    transform: scale(1.20);
 }
 
 /* SKILLS SECTION */
@@ -171,10 +196,13 @@ main {
   padding-bottom: 20px;
 }
 
-/* TABLE */
+#skillsSection {
+  padding-right: 10%;
+  padding-left: 10%;
+}
 
 table {
-  width: 70%;
+  width: 90%;
 }
 
 th {
@@ -186,7 +214,7 @@ th {
 }
 
 td {
-  font-size: 1.75em;
+  font-size: 1.6em;
 }
 
 .table-col {
@@ -201,6 +229,62 @@ td {
   padding-left: 17.5px;
 }
 
+.skills-grid {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  width: 32%;
+}
+
+.table-col {
+  width: 100%;
+}
+
+table tr td:nth-child(2) {
+  width: 192px;
+  float: right;
+}
+
+/* PARALLAX */
+
+#parallaxOne {
+  background-image: url(../img/computer_desk_1920.jpg);
+  height: 60vh;
+  -webkit-box-shadow:
+        inset 3px 10px 35px -9px rgba(0,0,0,0.8),
+        inset 3px -10px 35px -9px rgba(0,0,0,0.8);
+    -moz-box-shadow:
+          inset 3px 10px 35px -9px rgba(0,0,0,0.8),
+          inset 3px -10px 35px -9px rgba(0,0,0,0.8);
+      box-shadow:
+            inset 3px 10px 35px -9px rgba(0,0,0,0.8),
+            inset 3px -10px 35px -9px rgba(0,0,0,0.8);
+  }
+
+#parallaxTwo {
+  background-image: url(../img/photoshop_desk.jpg);
+  height: 60vh;
+  margin-top: -4px;
+  -webkit-box-shadow:
+        inset 3px 10px 35px -9px rgba(0,0,0,0.8),
+        inset 3px -10px 35px -9px rgba(0,0,0,0.8);
+    -moz-box-shadow:
+          inset 3px 10px 35px -9px rgba(0,0,0,0.8),
+          inset 3px -10px 35px -9px rgba(0,0,0,0.8);
+      box-shadow:
+            inset 3px 10px 35px -9px rgba(0,0,0,0.8),
+            inset 3px -10px 35px -9px rgba(0,0,0,0.8);
+}
+
+/* WORK SECTION*/
+
+.work-wrapper-mobile,
+.social-wrapper-mobile,
+.social-wrapper-sm-phone {
+  display: none;
+}
 
 /* Button in bottom right hand corner to retutn to top */
 #topBtn {
@@ -314,3 +398,150 @@ h3 {
 .card .card-content {
   height: 33.4%;
 }
+
+/* RESUME CALL TO ACTION SECTION */
+
+#resumeCTA {
+  background: rgb(133, 203, 51);
+  width: 100%;
+  height: 125px;
+  padding-top: 36px;
+  display: inline-block;
+  text-align: center;
+}
+
+#resumeCTA button,
+#resumeSection button {
+  background-color: rgb(72, 72, 74);
+  color: rgb(133, 203, 51);
+  height: 55px;
+  font-size: 1.7em;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+}
+
+#resumeCTA button:hover,
+#resumeSection button:hover {
+background-color: #353535;
+z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.07);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.07);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.07);
+  transition: all 300ms ease-in;
+  transform: scale(1.20);
+}
+
+.btn:focus,
+.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+ /* arrow animation*/
+.arrow .fa-arrow-right {
+  color: rgb(72, 72, 74);
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(-80px);
+}
+
+#resumeCTA:hover .arrow .fa-arrow-right {
+  opacity: 1;
+  transform: translateX(80px);
+}
+
+.arrow .fa-arrow-left {
+  color: rgb(72, 72, 74);
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(80px);
+}
+
+#resumeCTA:hover .arrow .fa-arrow-left {
+  opacity: 1;
+  transform: translateX(-80px);
+}
+
+/* RESUME SECTION */
+
+#resumeSection {
+  text-align: center;
+  height: 80vh;
+  margin-top: -4px;
+  margin-bottom: 15px;
+  overflow: scroll;
+}
+
+#resumeSection img {
+  margin: 10px 0 20px 0;
+  border: 1px solid rgb(187, 187, 187);
+  -webkit-box-shadow: 10px 10px 10px -2px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px -2px rgba(0,0,0,0.52);
+      box-shadow: 10px 10px 10px -2px rgba(0,0,0,0.52);
+}
+
+#resumeSection button {
+  margin: 0 0 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(72, 72, 74);
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+
+footer img {
+  margin-bottom: 15px;
+}
+
+footer a,
+footer a:hover {
+  text-decoration: none;
+  color: rgb(133, 203, 51);
+}
+
+footer p {
+  padding-bottom: 15px;
+}
+
+footer .fa-github-square,
+footer .fa-linkedin,
+footer .fa-dribbble-square,
+footer .fa-behance-square,
+footer .fa-twitter-square {
+  color: rgb(133, 203, 51);
+  margin: 0 40px;
+}
+
+footer .fa-github-square:hover,
+footer .fa-linkedin:hover,
+footer .fa-dribbble-square:hover,
+footer .fa-behance-square:hover,
+footer .fa-twitter-square:hover {
+  color: rgb(133, 203, 51);
+  z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.07);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.07);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.07);
+    transition: all 300ms ease-in;
+    transform: scale(1.20);
+}
+
+#footer .copyright h4 {
+  line-height: 50px;
+}
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
