@@ -497,4 +497,12 @@
   #resumeSection img {
     width: 250px;
   }
+
+  .navbar {
+    padding: 0 8px;
+  }
+
+  .row {
+    max-width: 360px;
+  }
 }
